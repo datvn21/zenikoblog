@@ -11,7 +11,9 @@ const Menu = () => {
   return (
     <div className="h-[70px] w-full px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
       <Link href={"/"} className="">
-        <a className="flex items-center">zenblog .</a>
+        <a className="flex items-center text-[25px]">
+          zenblog <div className="text-yellow-500 text-[30px]">.</div>
+        </a>
       </Link>
 
       <div className="flex items-center">

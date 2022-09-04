@@ -1,3 +1,74 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000a5a;
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0b1986;
+}
+
+@keyframes showTitleBanner {
+  from {
+    left: -500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes upShadowBanner {
+  from {
+    bottom: -400px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.bg-text {
+  background: rgb(43, 43, 43);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 10, 90, 0.8186624991793592) 0%,
+    rgba(255, 255, 255, 0) 61%
+  );
+}
+
+.upShadow {
+  animation-name: upShadowBanner;
+  animation-duration: 0.2s;
+}
+
+.showTitle {
+  animation-name: showTitleBanner;
+  animation-duration: 0.3s;
+}
+
+.threeDot {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 768px) {
+  .hide {
+    display: none;
+  }
+}
