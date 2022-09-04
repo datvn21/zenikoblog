@@ -2,8 +2,8 @@ import React from "react";
 
 const SubBanner = () => {
   return (
-    <div className="h-[300px] sm:h-[250px] lg:h-[240px] w-full sm:w-1/2 mx-[5px]  lg:w-full overflow-hidden  rounded-2xl relative group">
-      <div className="bg-text upShadow h-full w-full absolute group-hover:block transition-all z-50 hide">
+    <div className="h-[300px] sm:h-[200px] lg:h-[240px] w-full sm:w-1/2 mx-[5px]  lg:w-full overflow-hidden  rounded-2xl relative group">
+      <div className="bg-text upShadow h-full w-full absolute group-hover:block transition-all z-10 hide">
         <div className="showTitle duration-75 h-[100px] w-full absolute bottom-[0px] flex flex-col justify-center font-bold text-[18px] text-white px-[20px]">
           <span className="threeDot ">
             Samsung xứng đáng là thương hiệu đại diện của hệ điều hành Android
