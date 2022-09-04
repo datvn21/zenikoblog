@@ -9,15 +9,15 @@ import {
 } from "@heroicons/react/24/solid";
 const Menu = () => {
   return (
-    <div className="h-[70px] w-full px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
+    <div className="h-[70px] w-full px-[30px] sm:px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
       <Link href={"/"} className="">
         <a className="flex items-center text-[25px]">
           zenblog <div className="text-yellow-500 text-[30px]">.</div>
         </a>
       </Link>
 
-      <div className="flex items-center">
-        <div className="h-full w-[350px] py-[10px] mr-[100px] flex justify-between items-center">
+      <div className="flex  items-center">
+        <div className="none lg:flex h-full w-[350px] py-[10px] mr-[100px] justify-between items-center">
           <Link href={"/"}>
             <a className=" px-[15px] hover:text-[#0058db] flex py-[5px] items-center rounded-2xl">
               <HomeIcon className="h-6 w-6 pr-[5px]" />

@@ -3,7 +3,7 @@ import React from "react";
 const TopBanner = () => {
   return (
     <div className="h-[300px] sm:h-[500px] lg:w-[700px] w-full overflow-hidden rounded-2xl relative group  lg:mx-[10px]">
-      <div className="bg-text upShadow h-full w-full absolute group-hover:block transition-all z-50 hide">
+      <div className="bg-text upShadow h-full w-full absolute group-hover:block transition-all z-10 hide">
         <div className="showTitle duration-75 h-[100px] sm:h-[150px] flex flex-col justify-center overflow-y-scroll overscroll-y-auto w-full absolute bottom-[0px] font-bold text-[18px] sm:text-[20px] lg:text-[25px] text-white px-[20px]">
           <span className=" w-full">
             Samsung xứng đáng là thương hiệu đại diện của hệ điều hành Android
