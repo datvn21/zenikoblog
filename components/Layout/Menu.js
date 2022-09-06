@@ -10,7 +10,7 @@ import {
 import SearchBar from "./SearchBar";
 const Menu = () => {
   return (
-    <div className="fixed z-50 backdrop-blur-xl bg-white/30 top-0 h-[70px] w-full px-[30px] sm:px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
+    <div className="fixed z-50 backdrop-blur-xl bg-white/80 top-0 h-[70px] w-full px-[30px] sm:px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
       <Link href={"/"} className="">
         <a className="flex items-center text-[25px] select-none">
           zenblog <div className="text-yellow-500 text-[30px]">.</div>
