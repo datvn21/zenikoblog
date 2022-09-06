@@ -7,7 +7,7 @@ const index = ({ children }) => {
     <div className="">
       <TabBar />
       <Menu />
-      <main>{children}</main>
+      <main className="my-[70px]">{children}</main>
       <Footer />
     </div>
   );

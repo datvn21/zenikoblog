@@ -7,11 +7,12 @@ import {
   UserIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/solid";
+import SearchBar from "./SearchBar";
 const Menu = () => {
   return (
-    <div className="h-[70px] w-full px-[30px] sm:px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
+    <div className="fixed z-50 backdrop-blur-xl bg-white/30 top-0 h-[70px] w-full px-[30px] sm:px-[100px] text-[18px] font-bold text-[#000a5a] justify-between flex items-center ">
       <Link href={"/"} className="">
-        <a className="flex items-center text-[25px]">
+        <a className="flex items-center text-[25px] select-none">
           zenblog <div className="text-yellow-500 text-[30px]">.</div>
         </a>
       </Link>
@@ -24,22 +25,20 @@ const Menu = () => {
               Home
             </a>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/news"}>
             <a className=" px-[15px] hover:text-[#0058db] flex py-[5px] items-center rounded-2xl">
               <NewspaperIcon className="h-6 w-6 pr-[5px]" />
               News
             </a>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/about"}>
             <a className=" px-[15px] hover:text-[#0058db] flex py-[5px] items-center rounded-2xl">
               <UserIcon className="h-6 w-6 pr-[5px]" />
               About
             </a>
           </Link>
         </div>
-        <div className="h-[35px] w-[35px] bg-yellow-300 rounded-full flex justify-center items-center p-[5px]">
-          <MagnifyingGlassIcon className="h-[20px] w-[20px]" />
-        </div>
+        <SearchBar />
       </div>
     </div>
   );
