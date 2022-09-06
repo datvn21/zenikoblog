@@ -1,12 +1,23 @@
 import React from "react";
-import { HomeIcon, NewspaperIcon, UserIcon } from "@heroicons/react/24/outline";
+import {
+  HomeIcon,
+  NewspaperIcon,
+  UserIcon,
+  Bars3BottomRightIcon,
+} from "@heroicons/react/24/outline";
 const TabBar = () => {
   return (
-    <div className="fixed bottom-0 h-[60px] w-full flex items-center justify-center lg:none z-50">
-      <div className="flex h-[50px] justify-around items-center w-[200px] rounded-full bg-yellow-300  ">
-        <HomeIcon className="h-[30px] w-[30px] text-[#000a5a]" />
-        <NewspaperIcon className="h-[30px] w-[30px] text-[#000a5a]" />
-        <UserIcon className="h-[30px] w-[30px] text-[#000a5a]" />
+    <div className="block lg:hidden w-[60px] fixed bottom-[10px] right-[10px] z-50">
+      <input type={"checkbox"} id="bottomBar" className="peer hidden" />
+      <div className="showUpBottomBar peer-checked:flex none flex-col items-center justify-around bg-yellow-400 rounded-full h-[200px] my-[5px] w-full ">
+        <HomeIcon className="peer-checked:invisible h-[30px] w-[30px]" />
+        <NewspaperIcon className="h-[30px] w-[30px]" />
+        <UserIcon className="h-[30px] w-[30px]" />
+      </div>
+      <div className="h-[60px] flex flex-col justify-center rounded-full bg-yellow-400 items-center w-full">
+        <label htmlFor="bottomBar">
+          <Bars3BottomRightIcon className="h-[30px] w-[30px]" />
+        </label>
       </div>
     </div>
   );

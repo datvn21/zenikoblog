@@ -47,6 +47,22 @@
   }
 }
 
+@keyframes showUpBottomBar {
+  from {
+    height: 60px;
+    bottom: 10px;
+  }
+  to {
+    height: 200px;
+    bottom: 65px;
+  }
+}
+
+.showUpBottomBar {
+  animation-name: showUpBottomBar;
+  animation-duration: 0.2s;
+}
+
 .bg-text {
   background: rgb(43, 43, 43);
   background: linear-gradient(
@@ -80,6 +96,12 @@
 
 @media (min-width: 768px) {
   .hide {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .hide800 {
     display: none;
   }
 }
