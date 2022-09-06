@@ -50,11 +50,11 @@
 @keyframes showUpBottomBar {
   from {
     height: 60px;
-    bottom: 10px;
+    bottom: 20px;
   }
   to {
     height: 200px;
-    bottom: 65px;
+    bottom: 75px;
   }
 }
 

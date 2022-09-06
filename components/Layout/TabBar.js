@@ -8,7 +8,7 @@ import {
 import Link from "next/link";
 const TabBar = () => {
   return (
-    <div className="block lg:hidden w-[60px] fixed bottom-[10px] right-[10px] z-50">
+    <div className="block lg:hidden w-[60px] fixed bottom-[20px] right-[20px] z-50">
       <input type={"checkbox"} id="bottomBar" className="peer hidden" />
       <div className="showUpBottomBar peer-checked:flex none flex-col-reverse items-center justify-around bg-yellow-400 rounded-full h-[200px] my-[5px] w-full ">
         <Link href={"/"}>
